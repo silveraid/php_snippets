@@ -18,14 +18,10 @@ function file_list() {
 
         if (preg_match("/(\.jpg|\.jpeg|\.png)$/i", $f)) {
 
-            # print ("{$f} XXX <br>");
             array_push($filtered, $f);
         }
-        else {
-
-            # print ("{$f}<br>");
-        }
     }
+
     return $filtered;
 }
 
